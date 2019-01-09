@@ -96,6 +96,9 @@
 		<Unit filename="/home/yael/CLionProjects/project2/FileCacheManager.h">
 			<Option target="project2"/>
 		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/Main.cpp">
+			<Option target="project2"/>
+		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/MySerialServer.cpp">
 			<Option target="project2"/>
 		</Unit>

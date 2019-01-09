@@ -1,10 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/project2.dir/main.cpp.o"
+  "CMakeFiles/project2.dir/Main.cpp.o"
   "CMakeFiles/project2.dir/MySerialServer.cpp.o"
   "CMakeFiles/project2.dir/MyTestClientHandler.cpp.o"
   "CMakeFiles/project2.dir/FileCacheManager.cpp.o"
   "CMakeFiles/project2.dir/TcpServer.cpp.o"
   "CMakeFiles/project2.dir/ReverserSolver.cpp.o"
+  "CMakeFiles/project2.dir/main.cpp.o"
   "project2.pdb"
   "project2"
 )
