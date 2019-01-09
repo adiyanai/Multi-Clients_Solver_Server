@@ -5,6 +5,7 @@
 #ifndef PROJECT2_MYTESTCLIENTHANDLER_H
 #define PROJECT2_MYTESTCLIENTHANDLER_H
 
+#include <map>
 #include "ClientHandler.h"
 #include "Solver.h"
 #include "CacheManager.h"
@@ -17,6 +18,10 @@ public:
         this->cache = cache;
     }
     void handleClient(int cliSocket) override;
+
+    virtual CacheManager* getCache();
+
+    virtual ~MyTestClientHandler() override;
 };
 
 

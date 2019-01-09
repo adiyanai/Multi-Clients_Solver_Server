@@ -8,14 +8,15 @@
 #include "MyTestClientHandler.h"
 #include "MySerialServer.h"
 
+using namespace std;
+// the main is over after 3 timeout or after the sleep seconds.
 int main() {
     Solver<std::string, std::string>* solver = new ReverserSolver();
     CacheManager* cacheManager = new FileCacheManager();
     ClientHandler* myTestClientHandler = new MyTestClientHandler(solver, cacheManager);
-    //myTestClientHandler->handleClient(5400);
     server_side::MySerialServer mySerialServer = server_side::MySerialServer();
     mySerialServer.open(5500, myTestClientHandler);
-    std::cout << "inmain" << std::endl;
-
+    this_thread::sleep_for(chrono::milliseconds(10000));
+    mySerialServer.stop();
     return 0;
 }
