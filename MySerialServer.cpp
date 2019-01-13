@@ -14,6 +14,7 @@ server_side::MySerialServer::MySerialServer() {
 
 void server_side::MySerialServer::open(int port, ClientHandler* c) {
     int socketId = TcpServer::openSocket(port);
+    listen(socketId, 5);
     this->serverThread = std::thread(&start, socketId, c, stopRunning);
 }
 

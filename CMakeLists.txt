@@ -7,4 +7,5 @@ set(CMAKE_CXX_FLAGS -pthread)
 add_executable(project2 Main.cpp Server.h MySerialServer.cpp MySerialServer.h
         ClientHandler.h MyTestClientHandler.cpp MyTestClientHandler.h
         Solver.h CacheManager.h FileCacheManager.cpp FileCacheManager.h
-        TcpServer.cpp TcpServer.h ReverserSolver.cpp ReverserSolver.h main.cpp)
+        TcpServer.cpp TcpServer.h ReverserSolver.cpp ReverserSolver.h main.cpp
+        MyParallelServer.cpp MyParallelServer.h Astar.cpp Astar.h State.h Point.h MatrixSearchable.h Searchable.h)

@@ -4,8 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/yael/CLionProjects/project2/Astar.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/Astar.cpp.o"
   "/home/yael/CLionProjects/project2/FileCacheManager.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/FileCacheManager.cpp.o"
   "/home/yael/CLionProjects/project2/Main.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/Main.cpp.o"
+  "/home/yael/CLionProjects/project2/MyParallelServer.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MyParallelServer.cpp.o"
   "/home/yael/CLionProjects/project2/MySerialServer.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MySerialServer.cpp.o"
   "/home/yael/CLionProjects/project2/MyTestClientHandler.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MyTestClientHandler.cpp.o"
   "/home/yael/CLionProjects/project2/ReverserSolver.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/ReverserSolver.cpp.o"

@@ -34,26 +34,27 @@ namespace server_side {
         /* Now start listening for the clients, here process will
            * go in sleep mode and will wait for the incoming connection
         */
-        listen(serverSockfd, 5);
         return serverSockfd;
     }
 
     int server_side::TcpServer::acceptConnection(int socketId) {
+        bool afterFirstConnection = false;
         int clilen, cliSockfd;
         struct sockaddr_in cli_addr;
         clilen = sizeof(cli_addr);
 
-        //set accept timeout
-        timeval timeout;
-        // Timeout in seconds
-        timeout.tv_sec = 10;
-        timeout.tv_usec = 0;
-        //std::cout<<"before 30"<<std::endl;
-        setsockopt(socketId, SOL_SOCKET, SO_RCVTIMEO,(char*)&timeout,sizeof(timeout));
-        //setsockopt(socketId, SOL_SOCKET, SO_RCVTIMEO,&tv,sizeof(struct timeval));
+        if (afterFirstConnection) {
+            //set accept timeout
+            timeval timeout;
+            // Timeout in seconds
+            timeout.tv_sec = 10;
+            timeout.tv_usec = 0;
+            //std::cout<<"before 30"<<std::endl;
+            setsockopt(socketId, SOL_SOCKET, SO_RCVTIMEO, (char *) &timeout, sizeof(timeout));
+        }
         /* Accept actual connection from the client */
         cliSockfd = accept(socketId, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
-        //std::cout<<"finish 30 seconds"<<std::endl;
+        afterFirstConnection = true;
         return cliSockfd;
     }
 

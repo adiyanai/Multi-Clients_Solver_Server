@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/yael/CLionProjects/project2/Astar.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/Astar.h">
+			<Option target="project2"/>
+		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/CacheManager.h">
 			<Option target="project2"/>
 		</Unit>
@@ -99,6 +105,15 @@
 		<Unit filename="/home/yael/CLionProjects/project2/Main.cpp">
 			<Option target="project2"/>
 		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/MatrixSearchable.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/MyParallelServer.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/MyParallelServer.h">
+			<Option target="project2"/>
+		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/MySerialServer.cpp">
 			<Option target="project2"/>
 		</Unit>
@@ -111,16 +126,25 @@
 		<Unit filename="/home/yael/CLionProjects/project2/MyTestClientHandler.h">
 			<Option target="project2"/>
 		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/Point.h">
+			<Option target="project2"/>
+		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/ReverserSolver.cpp">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/ReverserSolver.h">
 			<Option target="project2"/>
 		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/Searchable.h">
+			<Option target="project2"/>
+		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/Server.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/Solver.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/State.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/TcpServer.cpp">

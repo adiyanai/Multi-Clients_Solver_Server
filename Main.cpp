@@ -7,6 +7,7 @@
 #include "FileCacheManager.h"
 #include "MyTestClientHandler.h"
 #include "MySerialServer.h"
+#include "MyParallelServer.h"
 
 namespace boot {
 // the main is over after 3 timeout or after the sleep seconds.
@@ -16,10 +17,10 @@ namespace boot {
             Solver<std::string, std::string> *solver = new ReverserSolver();
             CacheManager *cacheManager = new FileCacheManager();
             ClientHandler *myTestClientHandler = new MyTestClientHandler(solver, cacheManager);
-            server_side::MySerialServer mySerialServer = server_side::MySerialServer();
-            mySerialServer.open(port, myTestClientHandler);
-            std::this_thread::sleep_for(std::chrono::milliseconds(10000));
-            mySerialServer.stop();
+            server_side::MyParallelServer myParallelServer = server_side::MyParallelServer();
+            myParallelServer.open(port, myTestClientHandler);
+            std::this_thread::sleep_for(std::chrono::milliseconds(1000000000));
+            myParallelServer.stop();
             return 0;
         }
     };

@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/57/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/58/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/57/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/58/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/yael/CLionProjects/project2/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/57/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/58/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/57/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/58/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -122,6 +122,33 @@ project2: cmake_check_build_system
 project2/fast:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/build
 .PHONY : project2/fast
+
+Astar.o: Astar.cpp.o
+
+.PHONY : Astar.o
+
+# target to build an object file
+Astar.cpp.o:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Astar.cpp.o
+.PHONY : Astar.cpp.o
+
+Astar.i: Astar.cpp.i
+
+.PHONY : Astar.i
+
+# target to preprocess a source file
+Astar.cpp.i:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Astar.cpp.i
+.PHONY : Astar.cpp.i
+
+Astar.s: Astar.cpp.s
+
+.PHONY : Astar.s
+
+# target to generate assembly for a file
+Astar.cpp.s:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Astar.cpp.s
+.PHONY : Astar.cpp.s
 
 FileCacheManager.o: FileCacheManager.cpp.o
 
@@ -176,6 +203,33 @@ Main.s: Main.cpp.s
 Main.cpp.s:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Main.cpp.s
 .PHONY : Main.cpp.s
+
+MyParallelServer.o: MyParallelServer.cpp.o
+
+.PHONY : MyParallelServer.o
+
+# target to build an object file
+MyParallelServer.cpp.o:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MyParallelServer.cpp.o
+.PHONY : MyParallelServer.cpp.o
+
+MyParallelServer.i: MyParallelServer.cpp.i
+
+.PHONY : MyParallelServer.i
+
+# target to preprocess a source file
+MyParallelServer.cpp.i:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MyParallelServer.cpp.i
+.PHONY : MyParallelServer.cpp.i
+
+MyParallelServer.s: MyParallelServer.cpp.s
+
+.PHONY : MyParallelServer.s
+
+# target to generate assembly for a file
+MyParallelServer.cpp.s:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MyParallelServer.cpp.s
+.PHONY : MyParallelServer.cpp.s
 
 MySerialServer.o: MySerialServer.cpp.o
 
@@ -321,12 +375,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... project2"
 	@echo "... edit_cache"
+	@echo "... Astar.o"
+	@echo "... Astar.i"
+	@echo "... Astar.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
+	@echo "... MyParallelServer.o"
+	@echo "... MyParallelServer.i"
+	@echo "... MyParallelServer.s"
 	@echo "... MySerialServer.o"
 	@echo "... MySerialServer.i"
 	@echo "... MySerialServer.s"

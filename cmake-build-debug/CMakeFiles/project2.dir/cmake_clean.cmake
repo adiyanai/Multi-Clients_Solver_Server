@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project2.dir/TcpServer.cpp.o"
   "CMakeFiles/project2.dir/ReverserSolver.cpp.o"
   "CMakeFiles/project2.dir/main.cpp.o"
+  "CMakeFiles/project2.dir/MyParallelServer.cpp.o"
+  "CMakeFiles/project2.dir/Astar.cpp.o"
   "project2.pdb"
   "project2"
 )
