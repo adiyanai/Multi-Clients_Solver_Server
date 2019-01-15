@@ -123,33 +123,6 @@ project2/fast:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/build
 .PHONY : project2/fast
 
-Astar.o: Astar.cpp.o
-
-.PHONY : Astar.o
-
-# target to build an object file
-Astar.cpp.o:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Astar.cpp.o
-.PHONY : Astar.cpp.o
-
-Astar.i: Astar.cpp.i
-
-.PHONY : Astar.i
-
-# target to preprocess a source file
-Astar.cpp.i:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Astar.cpp.i
-.PHONY : Astar.cpp.i
-
-Astar.s: Astar.cpp.s
-
-.PHONY : Astar.s
-
-# target to generate assembly for a file
-Astar.cpp.s:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Astar.cpp.s
-.PHONY : Astar.cpp.s
-
 FileCacheManager.o: FileCacheManager.cpp.o
 
 .PHONY : FileCacheManager.o
@@ -203,6 +176,33 @@ Main.s: Main.cpp.s
 Main.cpp.s:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Main.cpp.s
 .PHONY : Main.cpp.s
+
+MyClientHandler.o: MyClientHandler.cpp.o
+
+.PHONY : MyClientHandler.o
+
+# target to build an object file
+MyClientHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MyClientHandler.cpp.o
+.PHONY : MyClientHandler.cpp.o
+
+MyClientHandler.i: MyClientHandler.cpp.i
+
+.PHONY : MyClientHandler.i
+
+# target to preprocess a source file
+MyClientHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MyClientHandler.cpp.i
+.PHONY : MyClientHandler.cpp.i
+
+MyClientHandler.s: MyClientHandler.cpp.s
+
+.PHONY : MyClientHandler.s
+
+# target to generate assembly for a file
+MyClientHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MyClientHandler.cpp.s
+.PHONY : MyClientHandler.cpp.s
 
 MyParallelServer.o: MyParallelServer.cpp.o
 
@@ -375,15 +375,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... project2"
 	@echo "... edit_cache"
-	@echo "... Astar.o"
-	@echo "... Astar.i"
-	@echo "... Astar.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
+	@echo "... MyClientHandler.o"
+	@echo "... MyClientHandler.i"
+	@echo "... MyClientHandler.s"
 	@echo "... MyParallelServer.o"
 	@echo "... MyParallelServer.i"
 	@echo "... MyParallelServer.s"

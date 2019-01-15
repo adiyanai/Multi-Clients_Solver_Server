@@ -57,18 +57,18 @@ include CMakeFiles/project2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/project2.dir/flags.make
 
-CMakeFiles/project2.dir/Main.cpp.o: CMakeFiles/project2.dir/flags.make
-CMakeFiles/project2.dir/Main.cpp.o: ../Main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project2.dir/Main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project2.dir/Main.cpp.o -c /home/yael/CLionProjects/project2/Main.cpp
+CMakeFiles/project2.dir/main.cpp.o: CMakeFiles/project2.dir/flags.make
+CMakeFiles/project2.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project2.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project2.dir/main.cpp.o -c /home/yael/CLionProjects/project2/main.cpp
 
-CMakeFiles/project2.dir/Main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project2.dir/Main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yael/CLionProjects/project2/Main.cpp > CMakeFiles/project2.dir/Main.cpp.i
+CMakeFiles/project2.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project2.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yael/CLionProjects/project2/main.cpp > CMakeFiles/project2.dir/main.cpp.i
 
-CMakeFiles/project2.dir/Main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project2.dir/Main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yael/CLionProjects/project2/Main.cpp -o CMakeFiles/project2.dir/Main.cpp.s
+CMakeFiles/project2.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project2.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yael/CLionProjects/project2/main.cpp -o CMakeFiles/project2.dir/main.cpp.s
 
 CMakeFiles/project2.dir/MySerialServer.cpp.o: CMakeFiles/project2.dir/flags.make
 CMakeFiles/project2.dir/MySerialServer.cpp.o: ../MySerialServer.cpp
@@ -135,22 +135,35 @@ CMakeFiles/project2.dir/ReverserSolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project2.dir/ReverserSolver.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yael/CLionProjects/project2/ReverserSolver.cpp -o CMakeFiles/project2.dir/ReverserSolver.cpp.s
 
-CMakeFiles/project2.dir/main.cpp.o: CMakeFiles/project2.dir/flags.make
-CMakeFiles/project2.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project2.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project2.dir/main.cpp.o -c /home/yael/CLionProjects/project2/main.cpp
+CMakeFiles/project2.dir/MyClientHandler.cpp.o: CMakeFiles/project2.dir/flags.make
+CMakeFiles/project2.dir/MyClientHandler.cpp.o: ../MyClientHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project2.dir/MyClientHandler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project2.dir/MyClientHandler.cpp.o -c /home/yael/CLionProjects/project2/MyClientHandler.cpp
 
-CMakeFiles/project2.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project2.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yael/CLionProjects/project2/main.cpp > CMakeFiles/project2.dir/main.cpp.i
+CMakeFiles/project2.dir/MyClientHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project2.dir/MyClientHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yael/CLionProjects/project2/MyClientHandler.cpp > CMakeFiles/project2.dir/MyClientHandler.cpp.i
 
-CMakeFiles/project2.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project2.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yael/CLionProjects/project2/main.cpp -o CMakeFiles/project2.dir/main.cpp.s
+CMakeFiles/project2.dir/MyClientHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project2.dir/MyClientHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yael/CLionProjects/project2/MyClientHandler.cpp -o CMakeFiles/project2.dir/MyClientHandler.cpp.s
+
+CMakeFiles/project2.dir/Main.cpp.o: CMakeFiles/project2.dir/flags.make
+CMakeFiles/project2.dir/Main.cpp.o: ../Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project2.dir/Main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project2.dir/Main.cpp.o -c /home/yael/CLionProjects/project2/Main.cpp
+
+CMakeFiles/project2.dir/Main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project2.dir/Main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yael/CLionProjects/project2/Main.cpp > CMakeFiles/project2.dir/Main.cpp.i
+
+CMakeFiles/project2.dir/Main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project2.dir/Main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yael/CLionProjects/project2/Main.cpp -o CMakeFiles/project2.dir/Main.cpp.s
 
 CMakeFiles/project2.dir/MyParallelServer.cpp.o: CMakeFiles/project2.dir/flags.make
 CMakeFiles/project2.dir/MyParallelServer.cpp.o: ../MyParallelServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project2.dir/MyParallelServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project2.dir/MyParallelServer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project2.dir/MyParallelServer.cpp.o -c /home/yael/CLionProjects/project2/MyParallelServer.cpp
 
 CMakeFiles/project2.dir/MyParallelServer.cpp.i: cmake_force
@@ -161,43 +174,30 @@ CMakeFiles/project2.dir/MyParallelServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project2.dir/MyParallelServer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yael/CLionProjects/project2/MyParallelServer.cpp -o CMakeFiles/project2.dir/MyParallelServer.cpp.s
 
-CMakeFiles/project2.dir/Astar.cpp.o: CMakeFiles/project2.dir/flags.make
-CMakeFiles/project2.dir/Astar.cpp.o: ../Astar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project2.dir/Astar.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project2.dir/Astar.cpp.o -c /home/yael/CLionProjects/project2/Astar.cpp
-
-CMakeFiles/project2.dir/Astar.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project2.dir/Astar.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yael/CLionProjects/project2/Astar.cpp > CMakeFiles/project2.dir/Astar.cpp.i
-
-CMakeFiles/project2.dir/Astar.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project2.dir/Astar.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yael/CLionProjects/project2/Astar.cpp -o CMakeFiles/project2.dir/Astar.cpp.s
-
 # Object files for target project2
 project2_OBJECTS = \
-"CMakeFiles/project2.dir/Main.cpp.o" \
+"CMakeFiles/project2.dir/main.cpp.o" \
 "CMakeFiles/project2.dir/MySerialServer.cpp.o" \
 "CMakeFiles/project2.dir/MyTestClientHandler.cpp.o" \
 "CMakeFiles/project2.dir/FileCacheManager.cpp.o" \
 "CMakeFiles/project2.dir/TcpServer.cpp.o" \
 "CMakeFiles/project2.dir/ReverserSolver.cpp.o" \
-"CMakeFiles/project2.dir/main.cpp.o" \
-"CMakeFiles/project2.dir/MyParallelServer.cpp.o" \
-"CMakeFiles/project2.dir/Astar.cpp.o"
+"CMakeFiles/project2.dir/MyClientHandler.cpp.o" \
+"CMakeFiles/project2.dir/Main.cpp.o" \
+"CMakeFiles/project2.dir/MyParallelServer.cpp.o"
 
 # External object files for target project2
 project2_EXTERNAL_OBJECTS =
 
-project2: CMakeFiles/project2.dir/Main.cpp.o
+project2: CMakeFiles/project2.dir/main.cpp.o
 project2: CMakeFiles/project2.dir/MySerialServer.cpp.o
 project2: CMakeFiles/project2.dir/MyTestClientHandler.cpp.o
 project2: CMakeFiles/project2.dir/FileCacheManager.cpp.o
 project2: CMakeFiles/project2.dir/TcpServer.cpp.o
 project2: CMakeFiles/project2.dir/ReverserSolver.cpp.o
-project2: CMakeFiles/project2.dir/main.cpp.o
+project2: CMakeFiles/project2.dir/MyClientHandler.cpp.o
+project2: CMakeFiles/project2.dir/Main.cpp.o
 project2: CMakeFiles/project2.dir/MyParallelServer.cpp.o
-project2: CMakeFiles/project2.dir/Astar.cpp.o
 project2: CMakeFiles/project2.dir/build.make
 project2: CMakeFiles/project2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable project2"

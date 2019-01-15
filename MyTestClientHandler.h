@@ -10,9 +10,10 @@
 #include "Solver.h"
 #include "CacheManager.h"
 
+
 class MyTestClientHandler : public ClientHandler {
     Solver<std::string, std::string>* solver;
-    CacheManager *cache;
+    CacheManager* cache;
 public:
     MyTestClientHandler(Solver<std::string, std::string>* solver, CacheManager* cache) : solver(solver) {
         this->cache = cache;

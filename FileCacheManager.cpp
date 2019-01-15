@@ -7,6 +7,7 @@
 #include <iostream>
 #include <sstream>
 #include "FileCacheManager.h"
+#define FILE_NAME "reverser.txt"
 
 bool FileCacheManager::findSolution(string problem) {
     return (generalCache.count(problem) != 0);

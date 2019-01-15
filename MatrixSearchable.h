@@ -19,7 +19,7 @@ class MatrixSearchable : public Searchable <T> {
 
 public:
     MatrixSearchable(const vector<vector<State<Point> *>> &matrix, State<T> *start,
-            State<T> *end) : matrix(matrix), start(start), end(end) {
+                     State<T> *end) : matrix(matrix), start(start), end(end) {
         unsigned long numRows, numCols, row, col;
         numRows = matrix.size();
         numCols = matrix[0].size();
@@ -49,7 +49,7 @@ public:
     }
 
     State<T>* getInitialState() override {
-        return this->start;
+       return this->start;
     }
 
     State<T>* getGoalState() override {
@@ -62,8 +62,10 @@ public:
         unsigned long numRows, numCols, row, col;
         numRows = matrix.size();
         numCols = matrix[0].size();
+
         row = s->getState().getRow();
         col = s->getState().getCol();
+
         if (row != 0 && this->matrix[row - 1][col]->getCost() != -1) {
             allStates.push_back(this->matrix[row - 1][col]);
         }
@@ -104,6 +106,12 @@ public:
             std::cout<<std::endl;
         }
     }
+
+//    std::pair<Point, Point> getBoundedOfSearchable() {
+//        Point start = Point(0, 0);
+//        Point end = Point((int)this->matrix.size(), (int)this->matrix[0].size());
+//        return std::pair<Point, Point>(start, end);
+//    }
 };
 
 

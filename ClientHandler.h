@@ -10,7 +10,9 @@
 class ClientHandler {
 public:
     virtual void handleClient(int cliSocket) = 0;
+
     virtual CacheManager* getCache() {}
+
     virtual ~ClientHandler() = default;
 };
 

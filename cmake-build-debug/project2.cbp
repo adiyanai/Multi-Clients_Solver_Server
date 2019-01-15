@@ -84,16 +84,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/yael/CLionProjects/project2/Astar.cpp">
+		<Unit filename="/home/yael/CLionProjects/project2/Astar.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/Astar.h">
+		<Unit filename="/home/yael/CLionProjects/project2/BFS.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/BestFirstSearch.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/CacheManager.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/ClientHandler.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/DFS.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/FileCacheManager.cpp">
@@ -106,6 +112,12 @@
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/MatrixSearchable.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/MyClientHandler.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/MyClientHandler.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/MyParallelServer.cpp">
@@ -129,6 +141,9 @@
 		<Unit filename="/home/yael/CLionProjects/project2/Point.h">
 			<Option target="project2"/>
 		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/PriorityQueue.h">
+			<Option target="project2"/>
+		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/ReverserSolver.cpp">
 			<Option target="project2"/>
 		</Unit>
@@ -136,6 +151,12 @@
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/Searchable.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/Searcher.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/SearcherSolver.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/Server.h">

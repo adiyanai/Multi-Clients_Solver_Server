@@ -116,6 +116,10 @@ public:
         return this->cost < other->getCost();
     }
 
+    bool operator==(const State *other) const {
+        return (this->getState() == other->getState() && this->cost == other->cost);
+    }
+
 };
 
 struct SearchResult {
