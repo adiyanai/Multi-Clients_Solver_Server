@@ -5,7 +5,6 @@ CMakeFiles/project2.dir/FileCacheManager.cpp.o: ../CacheManager.h
 CMakeFiles/project2.dir/FileCacheManager.cpp.o: ../FileCacheManager.cpp
 CMakeFiles/project2.dir/FileCacheManager.cpp.o: ../FileCacheManager.h
 
-CMakeFiles/project2.dir/Main.cpp.o: ../Astar.h
 CMakeFiles/project2.dir/Main.cpp.o: ../BFS.h
 CMakeFiles/project2.dir/Main.cpp.o: ../BestFirstSearch.h
 CMakeFiles/project2.dir/Main.cpp.o: ../CacheManager.h
@@ -18,7 +17,6 @@ CMakeFiles/project2.dir/Main.cpp.o: ../MyClientHandler.h
 CMakeFiles/project2.dir/Main.cpp.o: ../MySerialServer.h
 CMakeFiles/project2.dir/Main.cpp.o: ../MyTestClientHandler.h
 CMakeFiles/project2.dir/Main.cpp.o: ../Point.h
-CMakeFiles/project2.dir/Main.cpp.o: ../PriorityQueue.h
 CMakeFiles/project2.dir/Main.cpp.o: ../ReverserSolver.h
 CMakeFiles/project2.dir/Main.cpp.o: ../Searchable.h
 CMakeFiles/project2.dir/Main.cpp.o: ../Searcher.h
@@ -44,6 +42,7 @@ CMakeFiles/project2.dir/MyParallelServer.cpp.o: ../ClientHandler.h
 CMakeFiles/project2.dir/MyParallelServer.cpp.o: ../MyParallelServer.cpp
 CMakeFiles/project2.dir/MyParallelServer.cpp.o: ../MyParallelServer.h
 CMakeFiles/project2.dir/MyParallelServer.cpp.o: ../Server.h
+CMakeFiles/project2.dir/MyParallelServer.cpp.o: ../Solver.h
 CMakeFiles/project2.dir/MyParallelServer.cpp.o: ../TcpServer.h
 
 CMakeFiles/project2.dir/MySerialServer.cpp.o: ../CacheManager.h
@@ -51,6 +50,7 @@ CMakeFiles/project2.dir/MySerialServer.cpp.o: ../ClientHandler.h
 CMakeFiles/project2.dir/MySerialServer.cpp.o: ../MySerialServer.cpp
 CMakeFiles/project2.dir/MySerialServer.cpp.o: ../MySerialServer.h
 CMakeFiles/project2.dir/MySerialServer.cpp.o: ../Server.h
+CMakeFiles/project2.dir/MySerialServer.cpp.o: ../Solver.h
 CMakeFiles/project2.dir/MySerialServer.cpp.o: ../TcpServer.h
 
 CMakeFiles/project2.dir/MyTestClientHandler.cpp.o: ../CacheManager.h
@@ -67,7 +67,6 @@ CMakeFiles/project2.dir/ReverserSolver.cpp.o: ../Solver.h
 CMakeFiles/project2.dir/TcpServer.cpp.o: ../TcpServer.cpp
 CMakeFiles/project2.dir/TcpServer.cpp.o: ../TcpServer.h
 
-CMakeFiles/project2.dir/main.cpp.o: ../Astar.h
 CMakeFiles/project2.dir/main.cpp.o: ../BFS.h
 CMakeFiles/project2.dir/main.cpp.o: ../BestFirstSearch.h
 CMakeFiles/project2.dir/main.cpp.o: ../CacheManager.h
@@ -80,7 +79,6 @@ CMakeFiles/project2.dir/main.cpp.o: ../MyClientHandler.h
 CMakeFiles/project2.dir/main.cpp.o: ../MySerialServer.h
 CMakeFiles/project2.dir/main.cpp.o: ../MyTestClientHandler.h
 CMakeFiles/project2.dir/main.cpp.o: ../Point.h
-CMakeFiles/project2.dir/main.cpp.o: ../PriorityQueue.h
 CMakeFiles/project2.dir/main.cpp.o: ../ReverserSolver.h
 CMakeFiles/project2.dir/main.cpp.o: ../Searchable.h
 CMakeFiles/project2.dir/main.cpp.o: ../Searcher.h

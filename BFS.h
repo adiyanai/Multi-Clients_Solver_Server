@@ -16,16 +16,18 @@ class BFS : public Searcher<T> {
 public:
     SearchResult search(Searchable<T> *searchable) override {
         SearchResult searchResult;
+        // initialize the search result
         searchResult.developedVerticels = 0;
         searchResult.shortestPathRoute = "";
         searchResult.shortestPathWeight = 0;
 
         State<T> *initialState, *goalState, *currentNode;
+        std::vector<State<T>*> neighbors;
+        std::queue<State<T>*> q;
+
         initialState = searchable->getInitialState();
         goalState = searchable->getGoalState();
-        std::queue<State<T>*> q;
-        std::vector<State<T>*> neighbors;
-        initialState->setCameFrom("Start");
+        initialState->setCameFrom(Start);
         q.push(initialState);
 
         while (!q.empty())
@@ -40,58 +42,63 @@ public:
             }
 
             //upState
-            if (currentNode->getUpState() != nullptr && currentNode->getUpState()->getCameFrom() == "") {
-                currentNode->getUpState()->setCameFrom("Down");
+            if (currentNode->getUpState() != NULL && currentNode->getUpState()->getCameFrom() == NotSet) {
+                currentNode->getUpState()->setCameFrom(Down);
                 q.push(currentNode->getUpState());
 
             }
             //downState
-            if (currentNode->getDownState() != nullptr && currentNode->getDownState()->getCameFrom() == "") {
-                currentNode->getDownState()->setCameFrom("Up");
+            if (currentNode->getDownState() != NULL && currentNode->getDownState()->getCameFrom() == NotSet) {
+                currentNode->getDownState()->setCameFrom(Up);
                 q.push(currentNode->getDownState());
 
             }
             //leftState
-            if (currentNode->getLeftState() != nullptr && currentNode->getLeftState()->getCameFrom() == "") {
-                currentNode->getLeftState()->setCameFrom("Right");
+            if (currentNode->getLeftState() != NULL && currentNode->getLeftState()->getCameFrom() == NotSet) {
+                currentNode->getLeftState()->setCameFrom(Right);
                 q.push(currentNode->getLeftState());
 
             }
             //rightState
-            if (currentNode->getRightState() != nullptr && currentNode->getRightState()->getCameFrom() == "") {
-                currentNode->getRightState()->setCameFrom("Left");
+            if (currentNode->getRightState() != NULL && currentNode->getRightState()->getCameFrom() == NotSet) {
+                currentNode->getRightState()->setCameFrom(Left);
                 q.push(currentNode->getRightState());
 
             }
             searchResult.developedVerticels++;
         }
 
-        bool arrivedInitialState;
-        arrivedInitialState = false;
+        //no path exists!
+        if (currentNode != goalState){
+            searchResult.shortestPathRoute = "";
+            searchResult.shortestPathWeight = -1;
+            return searchResult;
+        }
+
+        bool arrivedInitialState = false;
         string currentDir;
-        currentNode = goalState;
         while (!arrivedInitialState)
         {
             searchResult.shortestPathWeight += currentNode->getCost();
             switch (currentNode->getCameFrom())
             {
-                case "Up":
+                case Up:
                     currentNode = currentNode->getUpState();
                     currentDir = "Down, ";
                     break;
-                case "Down":
+                case Down:
                     currentNode = currentNode->getDownState();
                     currentDir = "Up, ";
                     break;
-                case "Left":
+                case Left:
                     currentNode = currentNode->getLeftState();
                     currentDir = "Right, ";
                     break;
-                case "Right":
+                case Right:
                     currentNode = currentNode->getRightState();
                     currentDir = "Left, ";
                     break;
-                case "Start":
+                case Start:
                     arrivedInitialState = true;
                     break;
                 default:

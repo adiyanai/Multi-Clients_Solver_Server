@@ -1,6 +1,3 @@
-//
-// Created by yael on 1/9/19.
-//
 #include "Main.cpp"
 
 int main(int argc, char* argv[]) {
@@ -16,4 +13,5 @@ int main(int argc, char* argv[]) {
         return 1;
     }
     boot::Main().main(port);
+    return 0;
 }

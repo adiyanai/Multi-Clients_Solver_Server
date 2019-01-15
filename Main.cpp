@@ -18,7 +18,6 @@
 #include "BFS.h"
 #include "DFS.h"
 #include "BestFirstSearch.h"
-#include "Astar.h"
 
 
 namespace boot {
@@ -26,14 +25,18 @@ namespace boot {
     class Main {
     public:
         int main(int port) {
-            Solver<Searchable<Point>*, SearchResult> *solver = new SearcherSolver<Point>(new Astar<Point>());
+            BestFirstSearch<Point>* bestFirstSearch = new BestFirstSearch<Point>();
+            Solver<Searchable<Point>*, SearchResult> *solver = new SearcherSolver<Point>(bestFirstSearch);
             CacheManager *cacheManager = new FileCacheManager();
-            //ClientHandler *myTestClientHandler = new MyTestClientHandler(solver, cacheManager);
             ClientHandler *myTestClientHandler = new MyClientHandler(solver, cacheManager);
             server_side::MySerialServer mySerialServer = server_side::MySerialServer();
             mySerialServer.open(port, myTestClientHandler);
             std::this_thread::sleep_for(std::chrono::milliseconds(10000));
             mySerialServer.stop();
+            delete(bestFirstSearch);
+            delete (solver);
+            delete (cacheManager);
+            delete (myTestClientHandler);
             return 0;
         }
     };
